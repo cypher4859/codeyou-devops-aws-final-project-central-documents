@@ -15,18 +15,18 @@ Set up a fully functional Minecraft server in a containerized environment. Your 
 - Allow mods to run within a 1.5GB memory limit.
 - Support seamless deployment and management via Docker Compose.
 
-[**Learn More**](#)\
+[**Learn More**](#https://github.com/cypher4859/codeyou-devops-with-aws-final-project-minecraft)\
 *Link to detailed Minecraft Server documentation.*
 
 ### 2. **Deploy a Saleor Dashboard**
 
-Containerize and deploy the [Saleor Dashboard](https://github.com/saleor/saleor-dashboard), a powerful headless e-commerce platform. Additional challenges:
+Containerize and deploy the [Saleor Dashboard](https://github.com/cypher4859/codeyou-devops-with-aws-final-project-saleor-full), a powerful headless e-commerce platform. Additional challenges:
 
 - **Bonus 1**: Deploy the [Saleor Storefront](https://github.com/saleor/storefront) alongside the dashboard.
 - **Bonus 2**: Integrate Jaeger for distributed tracing (accessible on port 16686).
 - **Bonus 3**: Integrate Mailpit for testing email functionality (accessible on port 8025).
 
-[**Learn More**](#)\
+[**Learn More**](#https://github.com/cypher4859/codeyou-devops-with-aws-final-project-saleor-full)\
 *Link to detailed Saleor documentation.*
 
 ### 3. **Bring Your Own App (BYOA)**
@@ -77,6 +77,20 @@ Each final project must include the following deliverables:
   - Deploy an image tagged as `<your-app-name>:production`.
   - Maintain a `latest` tag reflecting the production environment.
   - Ensure this branch is used for deployment to AWS.
+
+### 4. AWS Deployment
+
+- Your project must be deployed to Amazon ECS (Elastic Container Service).
+
+- Provide the necessary configurations for ECS deployment, including:
+
+    - ECS task definitions.
+
+    - Service configurations.
+
+    - Networking settings (VPC, subnets, and security groups).
+
+Ensure the deployed application is accessible and functional in the AWS environment.
 
 ---
 
