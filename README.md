@@ -26,7 +26,7 @@ Containerize and deploy the [Saleor Dashboard](https://github.com/cypher4859/cod
 - **Bonus 2**: Integrate Jaeger for distributed tracing (accessible on port 16686).
 - **Bonus 3**: Integrate Mailpit for testing email functionality (accessible on port 8025).
 
-[**Learn More**](#https://github.com/cypher4859/codeyou-devops-with-aws-final-project-saleor-full)\
+[**Learn More**](https://github.com/cypher4859/codeyou-devops-with-aws-final-project-saleor-full)\
 *Link to detailed Saleor documentation.*
 
 ### 3. **Bring Your Own App (BYOA)**
