@@ -15,7 +15,7 @@ Set up a fully functional Minecraft server in a containerized environment. Your 
 - Allow mods to run within a 1.5GB memory limit.
 - Support seamless deployment and management via Docker Compose.
 
-[**Learn More**](#https://github.com/cypher4859/codeyou-devops-with-aws-final-project-minecraft)\
+[**Learn More**](https://github.com/cypher4859/codeyou-devops-with-aws-final-project-minecraft)\
 *Link to detailed Minecraft Server documentation.*
 
 ### 2. **Deploy a Saleor Dashboard**
