@@ -8,17 +8,7 @@ Welcome to the Final Project! This capstone assignment is your opportunity to sh
 
 For your final project, you can choose one of the following options:
 
-### 1. **Deploy a Minecraft Server**
-
-Set up a fully functional Minecraft server in a containerized environment. Your server should:
-
-- Allow mods to run within a 1.5GB memory limit.
-- Support seamless deployment and management via Docker Compose.
-
-[**Learn More**](https://github.com/cypher4859/codeyou-devops-with-aws-final-project-minecraft)\
-*Link to detailed Minecraft Server documentation.*
-
-### 2. **Deploy a Saleor Dashboard**
+### 1. **Deploy a Saleor Dashboard**
 
 Containerize and deploy the [Saleor Dashboard](https://github.com/cypher4859/codeyou-devops-with-aws-final-project-saleor-full), a powerful headless e-commerce platform. Additional challenges:
 
@@ -29,7 +19,7 @@ Containerize and deploy the [Saleor Dashboard](https://github.com/cypher4859/cod
 [**Learn More**](https://github.com/cypher4859/codeyou-devops-with-aws-final-project-saleor-full)\
 *Link to detailed Saleor documentation.*
 
-### 3. **Bring Your Own App (BYOA)**
+### 2. **Bring Your Own App (BYOA)**
 
 Develop and deploy your own application as part of your capstone project. This option is flexible and suitable for:
 
@@ -107,9 +97,10 @@ Ensure the deployed application is accessible and functional in the AWS environm
 
 ## Notes and Additional Challenges
 
-### Minecraft Server
+### All Projects
 
-- Your server must support mods and operate within a 1.5GB memory limit.
+- Your project deployed must operate within a 1.5GB memory limit. If you're concerned then we can talk about it but I don't think this will impact anyone
+- Ways to test this: Bring up your docker-compose stack, make sure everything is working, and run `docker stats` to evaluate how much memory your stack is running.
 
 ### Saleor Dashboard
 
@@ -123,12 +114,6 @@ Ensure the deployed application is accessible and functional in the AWS environm
 - Use this option to align the project with your capstone goals.
 
 ---
-
-## Resources
-
-- [Final Project Requirements Document](#)
-- [Minecraft Server Documentation](#)
-- [Saleor Documentation](#)
 
 Best of luck with your final project! Remember to follow best practices and have fun learning!
 
