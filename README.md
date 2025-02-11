@@ -98,9 +98,12 @@ Should you be taking this route then you will probably need to use the following
   - You'll need to add a Capacity Provider to your ECS Cluster and specify the Autoscaling Group
   - Then you'll proceed with creating the ECS Service and so forth. Once you specify that the Service should have +1 Tasks then the Service should automatically create the EC2 machine and place the Task.
   
-
+**ALTERNATE: ECS via EC2 Container Instances Deployment**  
+You could avoid needing a launch template and autoscaling group if you manually create an EC2 machine and register it with your ECS Cluster. Bear in mind that this could be more difficult than the original Fargate option.
 
 Ensure the deployed application is accessible and functional in the AWS environment.
+
+**NOTE: The grade depends on the deployment working, not the Application code so if the app doesn't totally work but the deployment succeeds and the containers are running then that's all you need to focus on.**
 
 ---
 
