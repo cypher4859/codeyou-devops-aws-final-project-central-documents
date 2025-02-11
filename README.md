@@ -73,12 +73,32 @@ Each final project must include the following deliverables:
 - Your project must be deployed to Amazon ECS (Elastic Container Service).
 
 - Provide the necessary configurations for ECS deployment, including:
+    - ECS Cluster using either Fargate (recommended) or EC2 Container Instances.
+    - ECS Task Definition(s). One Task Definition is recommended that handles all of your containers but it's up to you.
+    - ECS Service configuration that uses either EC2 or Fargate (recommended)
+    - Networking settings (VPC, subnets, and security groups). It's recommended though not required to use the following:
+      - Default `-` VPC
+      - Subnets within the default VPC:
+        - `subnet-0243668670d02534c`
+        - `subnet-021d0e5aee26923da`
+        - `subnet-03224a2574b748db6`
+      - Load Balancer of `Default-App-Load-Balancer`
 
-    - ECS task definitions.
+**OPTIONAL**: Deploy with EC2 Container Instances  
+Should you be taking this route then you will probably need to use the following:
+   - Networking settings (VPC, subnets, and security groups). It's recommended though not required to use the following:
+      - Default `-` VPC
+      - Subnets within the default VPC:
+        - `subnet-0243668670d02534c`
+        - `subnet-021d0e5aee26923da`
+        - `subnet-03224a2574b748db6`
+      - Load Balancer of `Default-App-Load-Balancer`
+  - You'll need to create a Launch Template for the specs of the machine that your ECS Task will be placed on.
+  - You'll need to create an Autoscaling Group that uses the Launch Template
+  - You'll need to add a Capacity Provider to your ECS Cluster and specify the Autoscaling Group
+  - Then you'll proceed with creating the ECS Service and so forth. Once you specify that the Service should have +1 Tasks then the Service should automatically create the EC2 machine and place the Task.
+  
 
-    - Service configurations.
-
-    - Networking settings (VPC, subnets, and security groups).
 
 Ensure the deployed application is accessible and functional in the AWS environment.
 
